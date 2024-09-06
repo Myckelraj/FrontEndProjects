@@ -1,0 +1,53 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.form-control {
+  text-transform: capitalize;
+  padding: 1rem 0rem 1rem 1rem;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+a {
+  color: #333;
+}
+
+@media screen and (max-width: 991px) {
+  .offcanvas-body .nav-item {
+    font-weight: 700;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .offcanvas-body .filter-categories {
+    width: 100%;
+    margin-bottom: 20px !important;
+    border: 1px solid #d1d1d1 !important;
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    border: none;
+    line-height: 1.4;
+    font-size: 0.9em;
+  }
+
+  .dropdown-menu a {
+    padding-left: 0;
+  }
+
+  .dropdown-toggle::after {
+    position: absolute;
+    right: 0;
+    top: 21px;
+  }
+
+  img {
+    width: 100px;
+  }
+}

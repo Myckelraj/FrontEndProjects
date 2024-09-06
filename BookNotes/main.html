@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dom.css" />
+    <title>BookStores</title>
+  </head>
+  <body>
+    <div class="navbar"><h1>BookStore</h1></div>
+    <div class="container">
+      <div class="book-container">
+        <h1>The Power of your Subconscious Mind</h1>
+        <h5>Joseph Murphy</h5>
+        <p>The Treasure House Within You</p>
+        <button onclick="deleteEvent(event)">Delete</button>
+      </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+      <h1>Add Book Note</h1>
+      <form action="">
+        <input type="text" placeholder="Enter Book Title" id="book-title" />
+        <input type="text" placeholder="Enter Book Author" id="book-author" />
+        <textarea
+          placeholder="Book Description"
+          id="book-description"
+        ></textarea>
+        <button class="add-book" id="add-book">Add Note</button>
+        <button class="add-cancel" id="add-cancel">Cancel</button>
+      </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="main.js"></script>
+  </body>
+</html>

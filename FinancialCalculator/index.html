@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h1>Financial Calculator</h1>
+      <div class="tabs">
+        <div class="tab active" data-target="#loan-amortization">Loan</div>
+        <div class="tab" data-target="#savings-plan">Savings</div>
+        <div class="tab" data-target="#mortgage-calculator">Mortgage</div>
+        <div class="tab" data-target="#investment-return">Investment</div>
+      </div>
+
+      <div id="loan-amortization" class="calculator">
+        <div class="input-group">
+          <label for="loan-principal">Loan Amount</label>
+          <input type="number" id="loan-principal" />
+        </div>
+        <div class="input-group">
+          <label for="loan-rate">Annual Interest Rate (%)</label>
+          <input type="number" id="loan-rate" />
+        </div>
+        <div class="input-group">
+          <label for="loan-time">Time (Years)</label>
+          <input type="number" id="loan-time" />
+        </div>
+        <button id="calculate-loan">Calculate Loan Payment</button>
+        <div class="result" id="result-loan-payment">
+          Monthly EMI: $0<br />Total Amount Payable: $0<br />Interest Amount: $0
+        </div>
+      </div>
+
+      <div id="savings-plan" class="calculator">
+        <div class="input-group">
+          <label for="savings-principal">Initial Savings</label>
+          <input type="number" id="savings-principal" />
+        </div>
+        <div class="input-group">
+          <label for="savings-rate">Annual Interest Rate (%)</label>
+          <input type="number" id="savings-rate" />
+        </div>
+        <div class="input-group">
+          <label for="savings-time">Time (Years)</label>
+          <input type="number" id="savings-time" />
+        </div>
+        <div class="input-group">
+          <label for="savings-contribution">Annual Contribution</label>
+          <input type="number" id="savings-contribution" />
+        </div>
+        <button id="calculate-savings">Calculate Savings</button>
+        <div class="result" id="result-savings">
+          Total Savings: $0<br />Interest Earned: $0
+        </div>
+      </div>
+
+      <div id="mortgage-calculator" class="calculator">
+        <div class="input-group">
+          <label for="mortgage-amount">Mortgage Amount</label>
+          <input
+            type="number"
+            id="mortgage-amount"
+            placeholder="Enter mortgage amount"
+          />
+        </div>
+        <div class="input-group">
+          <label for="down-payment">Down Payment (Optional)</label>
+          <input
+            type="number"
+            id="down-payment"
+            placeholder="Enter down payment (optional)"
+          />
+        </div>
+        <div class="input-group">
+          <label for="mortgage-rate">Annual Interest Rate (%)</label>
+          <input
+            type="number"
+            id="mortgage-rate"
+            placeholder="Enter annual interest rate"
+          />
+        </div>
+        <div class="input-group">
+          <label for="mortgage-time">Time (Years)</label>
+          <input
+            type="number"
+            id="mortgage-time"
+            placeholder="Enter loan term in years"
+          />
+        </div>
+        <div class="input-group">
+          <label for="property-taxes">Property Taxes per Year (Optional)</label>
+          <input
+            type="number"
+            id="property-taxes"
+            placeholder="Enter property taxes per year (optional)"
+          />
+        </div>
+        <div class="input-group">
+          <label for="insurance"
+            >Homeowners Insurance per Year (Optional)</label
+          >
+          <input
+            type="number"
+            id="insurance"
+            placeholder="Enter homeowners insurance per year (optional)"
+          />
+        </div>
+        <div class="input-group">
+          <label for="other-taxes">Other Taxes per Year (Optional)</label>
+          <input
+            type="number"
+            id="other-taxes"
+            placeholder="Enter other taxes per year (optional)"
+          />
+        </div>
+        <button id="calculate-mortgage">Calculate Mortgage Payment</button>
+        <div class="result" id="result-mortgage">
+          Monthly Payment: $0<br />
+          Total Mortgage Payable: $0<br />
+          Mortgage Interest: $0
+        </div>
+      </div>
+
+      <div id="investment-return" class="calculator">
+        <div class="input-group">
+          <label for="investment-principal">Investment Amount</label>
+          <input type="number" id="investment-principal" />
+        </div>
+        <div class="input-group">
+          <label for="investment-rate">Annual Interest Rate (%)</label>
+          <input type="number" id="investment-rate" />
+        </div>
+        <div class="input-group">
+          <label for="investment-time">Time (Years)</label>
+          <input type="number" id="investment-time" />
+        </div>
+        <button id="calculate-investment">Calculate Investment Return</button>
+        <div class="result" id="result-investment">
+          Total Return: $0<br />Profit Amount: $0
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

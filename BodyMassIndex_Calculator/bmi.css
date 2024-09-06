@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background: linear-gradient(to left bottom,rgb(34, 227, 34),lightyellow);
+    display: flex;
+    min-height: 85vh;
+    justify-content: center;
+}
+.container{
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(7, 0, 0);
+ }
+ .btn{
+    background-color: rgb(255, 0, 204);
+    padding: 10px 20px;
+    font-size: medium;
+    border-radius: 10px;    
+    cursor: pointer;
+    color: aliceblue;
+}
+.btn:hover{
+    box-shadow: 0 0 8px rgb(67, 120, 43);
+    transition: all 300ms ease;
+}
